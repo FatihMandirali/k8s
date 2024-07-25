@@ -36,6 +36,9 @@ spec:
            - name: TZ
              value: "Turkey"
            - name:  AppSettings__BaseUrl
-             value:  "http://k8s-gateway:5007"
+             valueFrom:
+              secretKeyRef:
+                key: gateway_base_url
+                name:  api-secret
           ports:
           - containerPort: 5006
