@@ -1,0 +1,6 @@
+﻿services:
+  k8s.api:
+    image: k8s.api
+    build:
+      context: .
+      dockerfile: K8S.API/Dockerfile

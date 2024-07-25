@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K8S.API", "K8S.API\K8S.API.csproj", "{DD3A44BA-E6EC-4D8B-864D-21F1FCF84477}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D101718F-19A5-45CD-AAA9-3A9A8685CE6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD3A44BA-E6EC-4D8B-864D-21F1FCF84477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3A44BA-E6EC-4D8B-864D-21F1FCF84477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3A44BA-E6EC-4D8B-864D-21F1FCF84477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3A44BA-E6EC-4D8B-864D-21F1FCF84477}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

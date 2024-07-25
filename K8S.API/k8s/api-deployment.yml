@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-api
+  namespace: test
+  annotations:
+    owner: "fatih mandıralı"
+    job: "Computer Engineer"
+spec:
+  selector:
+    matchLabels:
+      app: k8s-api
+  replicas: 1
+  template:
+    metadata:
+      namespace: test
+      labels:
+        app: k8s-api
+    spec:
+      containers:
+        - name: k8s-api
+          image:  fthmndrli/k8s-api
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "64M"
+              cpu: "250m"
+            limits:
+              memory: "256M"
+              cpu: "0.5"  
+          env:
+           - name: ASPNETCORE_APPREQUIREHOST
+             value: "*:5006"
+           - name: ASPNETCORE_URLS
+             value: "http://*:5006"
+           - name: TZ
+             value: "Turkey"
+           - name:  AppSettings__BaseUrl
+             value:  "http://k8s-gateway:5007"
+          ports:
+          - containerPort: 5006
